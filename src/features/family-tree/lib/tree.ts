@@ -2,6 +2,7 @@ import type { FamilyData, Language, Person } from "../../../types/family";
 
 const NODE_W = 126;
 const NODE_H = 52;
+const ROOT_NODE_W = 148;
 const LEAF_W = 96;
 const LEAF_H = 44;
 const SPOUSE_W = 58;
@@ -168,7 +169,7 @@ const assignUnitWidths = (unit: TreeUnit): number => {
   let ownWidth = mainW;
 
   if (unit.type === "root") {
-    ownWidth = NODE_W * 2 + GAP_X;
+    ownWidth = ROOT_NODE_W * 2 + GAP_X;
   } else if (unit.type === "couple") {
     ownWidth = mainW + SPOUSE_JOIN + SPOUSE_W;
   }
@@ -428,12 +429,12 @@ export const buildTreeScene = (data: FamilyData): TreeScene => {
     const mainH = unit.children.length > 0 ? NODE_H : LEAF_H;
 
     if (unit.type === "root") {
-      const pairWidth = NODE_W * 2 + GAP_X;
+      const pairWidth = ROOT_NODE_W * 2 + GAP_X;
       const boxX = unitCenterX - pairWidth / 2;
       unitPositions.set(unit.id, {
         mainX: boxX,
         mainY: unit.y,
-        mainW: NODE_W,
+        mainW: ROOT_NODE_W,
         mainH: NODE_H,
         topX: unitCenterX,
         topY: unit.y,
@@ -542,7 +543,7 @@ export const buildTreeScene = (data: FamilyData): TreeScene => {
         kind: "person",
         x: position.mainX,
         y: position.mainY,
-        width: NODE_W,
+        width: ROOT_NODE_W,
         height: NODE_H,
         isLeaf: false,
       });
@@ -551,9 +552,9 @@ export const buildTreeScene = (data: FamilyData): TreeScene => {
         id: `${unit.partnerId}-node`,
         personId: unit.partnerId ?? "",
         kind: "person",
-        x: position.mainX + NODE_W + GAP_X,
+        x: position.mainX + ROOT_NODE_W + GAP_X,
         y: position.mainY,
-        width: NODE_W,
+        width: ROOT_NODE_W,
         height: NODE_H,
         isLeaf: false,
       });
@@ -561,21 +562,21 @@ export const buildTreeScene = (data: FamilyData): TreeScene => {
       boundsByPerson[unit.personId] = {
         x: position.mainX,
         y: position.mainY,
-        width: NODE_W,
+        width: ROOT_NODE_W,
         height: NODE_H,
       };
 
       if (unit.partnerId) {
         boundsByPerson[unit.partnerId] = {
-          x: position.mainX + NODE_W + GAP_X,
+          x: position.mainX + ROOT_NODE_W + GAP_X,
           y: position.mainY,
-          width: NODE_W,
+          width: ROOT_NODE_W,
           height: NODE_H,
         };
       }
 
       connectors.push({
-        x: position.mainX + NODE_W,
+        x: position.mainX + ROOT_NODE_W,
         y: position.mainY + NODE_H / 2 - 1,
         width: GAP_X,
       });

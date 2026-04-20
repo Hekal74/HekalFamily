@@ -5,7 +5,7 @@ import FamilyTree from "./features/family-tree/ui/FamilyTree";
 const FAMILY_GATE_KEY = "hekal_family_gate_v1";
 
 const GATE_CONFIG = {
-	promptAr: "ما اسم ست العائلة التي يبدأ بها هذا الفرع؟",
+	promptAr: "ما اسم جدة العائلة زوجة أحمد هيكل؟",
 	promptEn: "What is the name of the family matriarch at the root of this branch?",
 	acceptedAnswers: ["وهيبة", "waheeba", "wahiba", "waheba"],
 };
