@@ -686,7 +686,7 @@
       "id": "c_g3_mahmoud_afaf",
       "a": "p_g3_mahmoud_afaf",
       "b": "p_g3_amany_mahmoud_sp",
-      "children": ["p_g4_mohamed_mahmoud", "p_g4_islam_mahmoud"]
+      "children": ["p_g4_mohamed_mahmoud", "p_g4_islam_mahmoud", "p_g5_eyad"]
     },
     {
       "id": "c_g3_mohamed_afaf",
@@ -701,12 +701,6 @@
       "children": ["p_g4_seyal", "p_g4_sama"]
     },
 
-    {
-      "id": "c_g4_mohamed_mahmoud",
-      "a": "p_g4_mohamed_mahmoud",
-      "b": null,
-      "children": ["p_g5_eyad"]
-    },
     {
       "id": "c_g4_islam_mahmoud",
       "a": "p_g4_islam_mahmoud",
