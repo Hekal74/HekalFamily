@@ -650,7 +650,7 @@
       "id": "c_g3_hala_fawzi",
       "a": "p_g3_hala_fawzi",
       "b": "p_g3_sameh_sp",
-      "children": ["p_g4_gana", "p_g4_salma_hala"]
+      "children": ["p_g4_gana", "p_g4_salma_hala", "p_g5_jamal", "p_g5_asmaa"]
     },
 
     {
@@ -692,7 +692,7 @@
       "id": "c_g3_mohamed_afaf",
       "a": "p_g3_mohamed_afaf",
       "b": "p_g3_shaimaa_sp",
-      "children": ["p_g4_ali_mohamed", "p_g4_salma_mohamed"]
+      "children": ["p_g4_ali_mohamed", "p_g4_salma_mohamed", "p_g5_omar_ali", "p_g5_noureldin"]
     },
     {
       "id": "c_g3_islam_afaf",
@@ -701,31 +701,6 @@
       "children": ["p_g4_seyal", "p_g4_sama"]
     },
 
-    {
-      "id": "c_g4_gana",
-      "a": "p_g4_gana",
-      "b": null,
-      "children": ["p_g5_jamal"]
-    },
-    {
-      "id": "c_g4_salma_hala",
-      "a": "p_g4_salma_hala",
-      "b": null,
-      "children": ["p_g5_asmaa"]
-    },
-
-    {
-      "id": "c_g4_ali_mohamed",
-      "a": "p_g4_ali_mohamed",
-      "b": null,
-      "children": ["p_g5_omar_ali"]
-    },
-    {
-      "id": "c_g4_salma_mohamed",
-      "a": "p_g4_salma_mohamed",
-      "b": null,
-      "children": ["p_g5_noureldin"]
-    },
     {
       "id": "c_g4_mohamed_mahmoud",
       "a": "p_g4_mohamed_mahmoud",
