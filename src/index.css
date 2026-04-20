@@ -864,13 +864,13 @@ body.lang-en .node.node-leaf .name-ar {
 .spouse-token {
 	align-items: center;
 	background: var(--male);
-	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.65);
+	border-radius: 999px;
 	box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px rgba(107, 91, 56, 0.18);
 	cursor: pointer;
 	display: flex;
-	font-size: 12px;
-	font-weight: 700;
 	justify-content: center;
+	padding: 0 6px;
 	position: absolute;
 	transition:
 		transform 0.15s ease,
@@ -891,6 +891,23 @@ body.lang-en .node.node-leaf .name-ar {
 .spouse-token .tok-initial {
 	color: #fff;
 	line-height: 1;
+}
+
+.spouse-label {
+	color: #fff;
+	display: block;
+	font-family: "Inter", sans-serif;
+	font-size: 9px;
+	font-weight: 700;
+	line-height: 1;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+body.lang-en .spouse-label {
+	font-size: 8px;
 }
 
 .drawer {
@@ -1485,6 +1502,10 @@ body.lang-en .dr-name-ar {
 @media (pointer: coarse) {
 	.spouse-token {
 		box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px rgba(97, 112, 80, 0.18);
+	}
+
+	.spouse-label {
+		font-size: 8px;
 	}
 
 	.tree-scene .node {

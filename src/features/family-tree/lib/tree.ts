@@ -4,7 +4,8 @@ const NODE_W = 126;
 const NODE_H = 52;
 const LEAF_W = 96;
 const LEAF_H = 44;
-const SPOUSE_TOKEN = 30;
+const SPOUSE_W = 58;
+const SPOUSE_H = 24;
 const SPOUSE_JOIN = 6;
 const GAP_X = 8;
 const GAP_Y = 96;
@@ -169,7 +170,7 @@ const assignUnitWidths = (unit: TreeUnit): number => {
   if (unit.type === "root") {
     ownWidth = NODE_W * 2 + GAP_X;
   } else if (unit.type === "couple") {
-    ownWidth = mainW + SPOUSE_JOIN + SPOUSE_TOKEN;
+    ownWidth = mainW + SPOUSE_JOIN + SPOUSE_W;
   }
 
   unit.mainW = mainW;
@@ -458,7 +459,7 @@ export const buildTreeScene = (data: FamilyData): TreeScene => {
         botX: mainCenterX,
         botY: unit.y + mainH,
         spouseX: boxX + unit.mainW + SPOUSE_JOIN,
-        spouseY: unit.y + (mainH - SPOUSE_TOKEN) / 2,
+        spouseY: unit.y + (mainH - SPOUSE_H) / 2,
       });
       continue;
     }
@@ -611,16 +612,16 @@ export const buildTreeScene = (data: FamilyData): TreeScene => {
         kind: "spouse",
         x: position.spouseX,
         y: position.spouseY ?? position.mainY,
-        width: SPOUSE_TOKEN,
-        height: SPOUSE_TOKEN,
+        width: SPOUSE_W,
+        height: SPOUSE_H,
         isLeaf: true,
       });
 
       boundsByPerson[unit.partnerId] = {
         x: position.spouseX,
         y: position.spouseY ?? position.mainY,
-        width: SPOUSE_TOKEN,
-        height: SPOUSE_TOKEN,
+        width: SPOUSE_W,
+        height: SPOUSE_H,
       };
 
       connectors.push({

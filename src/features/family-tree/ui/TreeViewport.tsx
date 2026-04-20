@@ -434,8 +434,6 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 
 					{scene.nodes.map((node) => {
 						const person = getPerson(data, node.personId);
-						const initials = getPersonInitials(person, language);
-
 						if (node.kind === "spouse") {
 							return (
 								<button
@@ -452,10 +450,14 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 									title={getDisplayName(person, language)}
 									type="button"
 								>
-									<span className="tok-initial">{initials}</span>
+									<span className="spouse-label">
+										{getDisplayName(person, language)}
+									</span>
 								</button>
 							);
 						}
+
+						const initials = getPersonInitials(person, language);
 
 						const lifeLine = getLifeLine(person, language);
 
