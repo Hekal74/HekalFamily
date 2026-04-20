@@ -1277,6 +1277,26 @@ body.lang-en .dr-name-ar {
 	color: var(--rule);
 }
 
+.legend-reset {
+	border-bottom: 1px dashed transparent;
+	color: var(--ink-mute);
+	cursor: pointer;
+	font-family: "Inter", sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	opacity: 0.38;
+	padding: 0;
+	transition: 0.2s ease;
+}
+
+.legend-reset:hover,
+.legend-reset:focus-visible {
+	border-bottom-color: rgba(49, 67, 95, 0.45);
+	color: var(--ink-soft);
+	opacity: 0.9;
+	outline: none;
+}
+
 @media (max-width: 900px) {
 	.gate-panel {
 		border-radius: 26px;

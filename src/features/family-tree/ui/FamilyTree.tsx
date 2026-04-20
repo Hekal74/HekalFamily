@@ -102,6 +102,24 @@ const FamilyTree = ({ onLock }: FamilyTreeProps) => {
 		}));
 	};
 
+	const resetLocalData = () => {
+		const shouldReset = window.confirm(
+			language === "ar"
+				? "هل تريد إعادة البيانات المحلية للوضع الأصلي؟ سيتم حذف تعديلات هذا الجهاز فقط."
+				: "Reset local data to the original family file? Only this device changes will be removed.",
+		);
+		if (!shouldReset) {
+			return;
+		}
+
+		window.localStorage.removeItem(STORAGE_KEY);
+		setData(familySeed);
+		setSelectedId(null);
+		setQuery("");
+		setSearchOpen(false);
+		setIsEditing(false);
+	};
+
 	return (
 		<div className="app-shell">
 			<div aria-hidden="true" className="paper-bg">
@@ -542,9 +560,23 @@ const FamilyTree = ({ onLock }: FamilyTreeProps) => {
 						</span>
 					</>
 				) : null}
+				<span className="legend-sep">·</span>
+				<button
+					className="legend-reset"
+					onClick={resetLocalData}
+					title={
+						language === "ar"
+							? "إعادة ضبط التعديلات المحلية"
+							: "Reset local data changes"
+					}
+					type="button"
+				>
+					{language === "ar" ? "إعادة ضبط محلية" : "Reset local"}
+				</button>
 			</footer>
 		</div>
 	);
 };
 
 export default FamilyTree;
+
