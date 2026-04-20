@@ -39,6 +39,13 @@ interface DragState {
 	originTy: number;
 }
 
+interface TouchPanState {
+	startX: number;
+	startY: number;
+	originTx: number;
+	originTy: number;
+}
+
 interface PinchState {
 	centerX: number;
 	centerY: number;
@@ -73,6 +80,7 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 	) => {
 		const viewportRef = useRef<HTMLDivElement>(null);
 		const dragRef = useRef<DragState | null>(null);
+		const touchPanRef = useRef<TouchPanState | null>(null);
 		const pinchRef = useRef<PinchState | null>(null);
 		const transformRef = useRef<TransformState>({
 			scale: 1,
@@ -88,9 +96,7 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 		});
 
 		const updateTransform = (
-			next:
-				| TransformState
-				| ((current: TransformState) => TransformState),
+			next: TransformState | ((current: TransformState) => TransformState),
 		) => {
 			const resolved =
 				typeof next === "function" ? next(transformRef.current) : next;
@@ -135,12 +141,8 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 				const { scale } = transformRef.current;
 				updateTransform({
 					scale,
-					tx:
-						viewport.clientWidth / 2 -
-						(bounds.x + bounds.width / 2) * scale,
-					ty:
-						viewport.clientHeight / 2 -
-						(bounds.y + bounds.height / 2) * scale,
+					tx: viewport.clientWidth / 2 - (bounds.x + bounds.width / 2) * scale,
+					ty: viewport.clientHeight / 2 - (bounds.y + bounds.height / 2) * scale,
 				});
 			},
 			[scene.boundsByPerson],
@@ -157,7 +159,6 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 				Math.max(current.scale * factor, SCALE_MIN),
 				SCALE_MAX,
 			);
-
 			const centerX = viewport.clientWidth / 2;
 			const centerY = viewport.clientHeight / 2;
 
@@ -197,7 +198,7 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 
 		return (
 			<main
-				className={`tree-viewport${dragging ? " dragging" : ""}`}
+				className={`tree-viewport tree-viewport-${mode}${dragging ? " dragging" : ""}`}
 				id="viewport"
 				onPointerCancel={() => {
 					dragRef.current = null;
@@ -254,14 +255,62 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 						setDragging(false);
 					}
 				}}
-				onTouchEnd={() => {
-					pinchRef.current = null;
-				}}
-				onTouchMove={(event) => {
-					if (event.touches.length !== 2) {
-						pinchRef.current = null;
+				onTouchStart={(event) => {
+					if (mode !== "explore" || event.touches.length !== 1) {
+						touchPanRef.current = null;
 						return;
 					}
+
+					const target = event.target;
+					if (
+						target instanceof Element &&
+						(target.closest(".node") || target.closest(".spouse-token"))
+					) {
+						touchPanRef.current = null;
+						return;
+					}
+
+					const [touch] = Array.from(event.touches);
+					touchPanRef.current = {
+						startX: touch.clientX,
+						startY: touch.clientY,
+						originTx: transformRef.current.tx,
+						originTy: transformRef.current.ty,
+					};
+					setDragging(true);
+				}}
+				onTouchEnd={() => {
+					pinchRef.current = null;
+					touchPanRef.current = null;
+					setDragging(false);
+				}}
+				onTouchMove={(event) => {
+					if (event.touches.length === 1) {
+						if (mode !== "explore" || !touchPanRef.current) {
+							pinchRef.current = null;
+							return;
+						}
+
+						const [touch] = Array.from(event.touches);
+						const touchPan = touchPanRef.current;
+						event.preventDefault();
+
+						updateTransform({
+							...transformRef.current,
+							tx: touchPan.originTx + touch.clientX - touchPan.startX,
+							ty: touchPan.originTy + touch.clientY - touchPan.startY,
+						});
+						return;
+					}
+
+					if (event.touches.length !== 2) {
+						pinchRef.current = null;
+						touchPanRef.current = null;
+						return;
+					}
+
+					touchPanRef.current = null;
+					setDragging(true);
 
 					const viewport = viewportRef.current;
 					if (!viewport) {
@@ -322,10 +371,7 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 					const pointerX = event.clientX - rect.left;
 					const pointerY = event.clientY - rect.top;
 					const nextScale = Math.min(
-						Math.max(
-							current.scale * (event.deltaY > 0 ? 0.9 : 1.1),
-							SCALE_MIN,
-						),
+						Math.max(current.scale * (event.deltaY > 0 ? 0.9 : 1.1), SCALE_MIN),
 						SCALE_MAX,
 					);
 
@@ -442,8 +488,8 @@ const TreeViewport = forwardRef<TreeViewportHandle, TreeViewportProps>(
 					<span>
 						{mode === "explore"
 							? language === "ar"
-								? "اسحب للتنقل • زوّم بالماوس أو الأزرار • وعلى الموبايل استخدم pinch"
-								: "Drag to pan • Zoom with wheel or buttons • On mobile, use pinch"
+								? "اسحب للتنقل • زوّم بالماوس أو الأزرار • وعلى الموبايل حرّك بإصبع واحد وكبّر بإصبعين"
+								: "Drag to pan • Zoom with wheel or buttons • On mobile, pan with one finger and pinch with two"
 							: language === "ar"
 								? "اسحب للتنقل • كبّر من الأزرار • وللاستكشاف الكامل افتح وضع الاستكشاف"
 								: "Drag to pan • Zoom with the buttons • Open Explore mode for full interaction"}
