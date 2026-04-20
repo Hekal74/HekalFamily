@@ -1,0 +1,194 @@
+{
+  "_comment": "Ahmed Hekal & Waheeba family. Gen 2 children each paired with spouses. Gen 3+ descendants shown with their spouses as married-in partners.",
+  "root": [
+    "p_ahmed_heikal",
+    "p_waheeba"
+  ],
+  "people": {
+    "p_ahmed_heikal": { "ar": "أحمد هيكل", "en": "Ahmed Hekal", "gender": "m", "birth": "", "note": "الجد الأكبر" },
+    "p_waheeba": { "ar": "وهيبة", "en": "Waheeba", "gender": "f", "birth": "", "note": "الجدة الكبرى" },
+
+    "p_g2_mohamed": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g2_mona_sp": { "ar": "منى", "en": "Mona", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g2_azza": { "ar": "عزيزة", "en": "Aziza", "gender": "f", "birth": "" },
+    "p_g2_abdelaziz_sp": { "ar": "عبدالعزيز", "en": "Abdelaziz", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g2_enayat": { "ar": "عنايات", "en": "Enayat", "gender": "f", "birth": "" },
+    "p_g2_ahmed_sp": { "ar": "أحمد", "en": "Ahmed", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g2_awatef": { "ar": "عواطف", "en": "Awatef", "gender": "f", "birth": "" },
+    "p_g2_hussein_sp": { "ar": "حسين", "en": "Hussein", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g2_fawzi": { "ar": "فوزي", "en": "Fawzy", "gender": "m", "birth": "" },
+    "p_g2_soheir_sp": { "ar": "سهير", "en": "Soheir", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g2_fathi": { "ar": "فتحي", "en": "Fathy", "gender": "m", "birth": "" },
+    "p_g2_nagwa_sp": { "ar": "نجوى", "en": "Nagwa", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g2_afaf": { "ar": "عفاف", "en": "Afaf", "gender": "f", "birth": "" },
+    "p_g2_hassanein_sp": { "ar": "حسانين", "en": "Hassanein", "gender": "m", "birth": "", "note": "زوج" },
+
+    "p_g3_islam_a": { "ar": "إسلام", "en": "Eslam", "gender": "m", "birth": "" },
+    "p_g3_ayman": { "ar": "أيمن", "en": "Ayman", "gender": "m", "birth": "" },
+    "p_g3_omnia_sp": { "ar": "أمنية", "en": "Omnia", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_ahmed_a": { "ar": "أحمد", "en": "Ahmed", "gender": "m", "birth": "" },
+    "p_g3_mai_sp": { "ar": "مي", "en": "Mai", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_eman": { "ar": "إيمان", "en": "Eman", "gender": "f", "birth": "" },
+    "p_g3_eman_husband_sp": { "ar": "أحمد", "en": "Ahmed", "gender": "m", "birth": "", "note": "زوج" },
+
+    "p_g3_mohamed_azza": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g3_manar_sp": { "ar": "منار", "en": "Manar", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_hadeer": { "ar": "هدير", "en": "Hadeer", "gender": "f", "birth": "" },
+
+    "p_g3_hassan": { "ar": "حسن", "en": "Hassan", "gender": "m", "birth": "" },
+    "p_g3_heba_sp": { "ar": "هبة", "en": "Heba", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_amira": { "ar": "أميرة", "en": "Amira", "gender": "f", "birth": "" },
+    "p_g3_amira_husband_sp": { "ar": "أحمد", "en": "Ahmed", "gender": "m", "birth": "", "note": "زوج" },
+
+    "p_g3_mostafa_awatef": { "ar": "مصطفى", "en": "Mostafa", "gender": "m", "birth": "" },
+    "p_g3_marwa_sp": { "ar": "مروة", "en": "Marwa", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_doaa_awatef": { "ar": "دعاء", "en": "Doaa", "gender": "f", "birth": "" },
+    "p_g3_ibrahim_husband_sp": { "ar": "إبراهيم", "en": "Ibrahim", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g3_walaa_awatef": { "ar": "ولاء", "en": "Walaa", "gender": "f", "birth": "" },
+    "p_g3_mohamed_walaa_sp": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g3_wessam_awatef": { "ar": "وسام", "en": "Wessam", "gender": "f", "birth": "" },
+    "p_g3_amr_wessam_sp": { "ar": "عمرو", "en": "Amr", "gender": "m", "birth": "", "note": "زوج" },
+
+    "p_g3_mohamed_fawzi": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g3_yosra_sp": { "ar": "يسرا", "en": "Yosra", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_amr_fawzi": { "ar": "عمرو", "en": "Amr", "gender": "m", "birth": "" },
+    "p_g3_rana_sp": { "ar": "رنا", "en": "Rana", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_hala_fawzi": { "ar": "هالة", "en": "Hala", "gender": "f", "birth": "" },
+    "p_g3_sameh_sp": { "ar": "سامح", "en": "Sameh", "gender": "m", "birth": "", "note": "زوج" },
+
+    "p_g3_ahmed_fathi": { "ar": "أحمد", "en": "Ahmed", "gender": "m", "birth": "" },
+    "p_g3_doaa_fathi_sp": { "ar": "دعاء", "en": "Doaa", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_helmy_fathi": { "ar": "حلمي", "en": "Helmy", "gender": "m", "birth": "" },
+    "p_g3_sara_sp": { "ar": "سارة", "en": "Sara", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_mohamed_fathi": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g3_farah_sp": { "ar": "فرح", "en": "Farah", "gender": "f", "birth": "", "note": "زوجة" },
+
+    "p_g3_amany_afaf": { "ar": "أماني", "en": "Amany", "gender": "f", "birth": "" },
+    "p_g3_mohamed_amany_sp": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g3_mahmoud_afaf": { "ar": "محمود", "en": "Mahmoud", "gender": "m", "birth": "" },
+    "p_g3_amany_mahmoud_sp": { "ar": "أماني", "en": "Amany", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_mohamed_afaf": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g3_shaimaa_sp": { "ar": "شيماء", "en": "Shaimaa", "gender": "f", "birth": "", "note": "زوجة" },
+    "p_g3_islam_afaf": { "ar": "إسلام", "en": "Eslam", "gender": "m", "birth": "" },
+    "p_g3_yasmin_sp": { "ar": "ياسمين", "en": "Yasmin", "gender": "f", "birth": "", "note": "زوجة" },
+
+    "p_g4_maher": { "ar": "ماهر", "en": "Maher", "gender": "m", "birth": "" },
+    "p_g4_mazen": { "ar": "مازن", "en": "Mazen", "gender": "m", "birth": "" },
+    "p_g4_layan": { "ar": "ليان", "en": "Layan", "gender": "f", "birth": "", "note": "مولودة حديثاً" },
+
+    "p_g4_malik_hassan": { "ar": "مالك", "en": "Malik", "gender": "m", "birth": "" },
+    "p_g4_nelly": { "ar": "نيللي", "en": "Nelly", "gender": "f", "birth": "" },
+
+    "p_g4_ammar": { "ar": "عمار", "en": "Ammar", "gender": "m", "birth": "" },
+    "p_g4_adnan": { "ar": "عدنان", "en": "Adnan", "gender": "m", "birth": "" },
+    "p_g4_kareem": { "ar": "كريم", "en": "Kareem", "gender": "m", "birth": "" },
+
+    "p_g4_kinda": { "ar": "كندة", "en": "Kinda", "gender": "f", "birth": "" },
+    "p_g4_karma": { "ar": "كرمة", "en": "Karma", "gender": "f", "birth": "" },
+    "p_g4_adam": { "ar": "آدم", "en": "Adam", "gender": "m", "birth": "" },
+
+    "p_g4_ali_doaa": { "ar": "علي", "en": "Ali", "gender": "m", "birth": "" },
+    "p_g4_abdelrahman": { "ar": "عبدالرحمن", "en": "Abdelrahman", "gender": "m", "birth": "" },
+    "p_g4_youssef": { "ar": "يوسف", "en": "Youssef", "gender": "m", "birth": "" },
+
+    "p_g4_ahmed_walaa": { "ar": "أحمد", "en": "Ahmed", "gender": "m", "birth": "" },
+    "p_g4_fayrouz": { "ar": "فيروز", "en": "Fayrouz", "gender": "f", "birth": "" },
+
+    "p_g4_ziad": { "ar": "زياد", "en": "Ziad", "gender": "m", "birth": "" },
+    "p_g4_maya": { "ar": "مايا", "en": "Maya", "gender": "f", "birth": "" },
+    "p_g4_mostafa_wessam": { "ar": "مصطفى", "en": "Mostafa", "gender": "m", "birth": "" },
+
+    "p_g4_taleen": { "ar": "تالين", "en": "Taleen", "gender": "f", "birth": "" },
+    "p_g4_moaz": { "ar": "معاذ", "en": "Moaz", "gender": "m", "birth": "" },
+    "p_g4_malik_amr": { "ar": "مالك", "en": "Malik", "gender": "m", "birth": "" },
+    "p_g4_gana": { "ar": "جنة", "en": "Gana", "gender": "f", "birth": "" },
+    "p_g4_salma_hala": { "ar": "سلمى", "en": "Salma", "gender": "f", "birth": "" },
+
+    "p_g4_ali_fathi": { "ar": "علي", "en": "Ali", "gender": "m", "birth": "" },
+    "p_g4_roqaya": { "ar": "رقية", "en": "Roqaya", "gender": "f", "birth": "" },
+    "p_g4_mariam": { "ar": "مريم", "en": "Mariam", "gender": "f", "birth": "" },
+    "p_g4_mohamed_ahmed_fathi": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g4_farida_sp": { "ar": "فريدة", "en": "Farida", "gender": "f", "birth": "", "note": "زوجة" },
+
+    "p_g4_seyal": { "ar": "سيال", "en": "Seyal", "gender": "f", "birth": "" },
+    "p_g4_sama": { "ar": "سما", "en": "Sama", "gender": "f", "birth": "" },
+    "p_g4_ali_mohamed": { "ar": "علي", "en": "Ali", "gender": "m", "birth": "" },
+    "p_g4_salma_mohamed": { "ar": "سلمى", "en": "Salma", "gender": "f", "birth": "" },
+    "p_g4_mohamed_mahmoud": { "ar": "محمد", "en": "Mohamed", "gender": "m", "birth": "" },
+    "p_g4_islam_mahmoud": { "ar": "إسلام", "en": "Eslam", "gender": "m", "birth": "" },
+    "p_g4_lara": { "ar": "لارا", "en": "Lara", "gender": "f", "birth": "" },
+    "p_g4_mostafa_amany": { "ar": "مصطفى", "en": "Mostafa", "gender": "m", "birth": "" },
+    "p_g4_radwa": { "ar": "رضوى", "en": "Radwa", "gender": "f", "birth": "" },
+    "p_g4_radwa_sp": { "ar": "عمر", "en": "Omar", "gender": "m", "birth": "", "note": "زوج" },
+    "p_g4_nada": { "ar": "ندى", "en": "Nada", "gender": "f", "birth": "" },
+    "p_g4_nada_sp": { "ar": "إبراهيم", "en": "Ibrahim", "gender": "m", "birth": "", "note": "زوج" },
+
+    "p_g5_jamal": { "ar": "جمال", "en": "Jamal", "gender": "m", "birth": "" },
+    "p_g5_asmaa": { "ar": "أسماء", "en": "Asmaa", "gender": "f", "birth": "" },
+    "p_g5_salma_mohamed_fathi": { "ar": "سلمى", "en": "Salma", "gender": "f", "birth": "" },
+    "p_g5_omar_ali": { "ar": "عمر", "en": "Omar", "gender": "m", "birth": "" },
+    "p_g5_noureldin": { "ar": "نورالدين", "en": "Noureldin", "gender": "m", "birth": "" },
+    "p_g5_eyad": { "ar": "إياد", "en": "Eyad", "gender": "m", "birth": "" },
+    "p_g5_omar_islam": { "ar": "عمر", "en": "Omar", "gender": "m", "birth": "" },
+    "p_g5_younes": { "ar": "يونس", "en": "Younes", "gender": "m", "birth": "" },
+    "p_g5_yassin": { "ar": "ياسين", "en": "Yassin", "gender": "m", "birth": "" }
+  },
+  "couples": [
+    { "id": "c_root", "a": "p_ahmed_heikal", "b": "p_waheeba",
+      "children": ["p_g2_mohamed","p_g2_azza","p_g2_enayat","p_g2_awatef","p_g2_fawzi","p_g2_fathi","p_g2_afaf"] },
+
+    { "id": "c_g2_mohamed", "a": "p_g2_mohamed", "b": "p_g2_mona_sp",
+      "children": ["p_g3_islam_a","p_g3_ayman","p_g3_ahmed_a","p_g3_eman"] },
+    { "id": "c_g2_azza", "a": "p_g2_azza", "b": "p_g2_abdelaziz_sp",
+      "children": ["p_g3_mohamed_azza","p_g3_hadeer"] },
+    { "id": "c_g2_enayat", "a": "p_g2_enayat", "b": "p_g2_ahmed_sp",
+      "children": ["p_g3_hassan","p_g3_amira"] },
+    { "id": "c_g2_awatef", "a": "p_g2_awatef", "b": "p_g2_hussein_sp",
+      "children": ["p_g3_mostafa_awatef","p_g3_doaa_awatef","p_g3_walaa_awatef","p_g3_wessam_awatef"] },
+    { "id": "c_g2_fawzi", "a": "p_g2_fawzi", "b": "p_g2_soheir_sp",
+      "children": ["p_g3_mohamed_fawzi","p_g3_amr_fawzi","p_g3_hala_fawzi"] },
+    { "id": "c_g2_fathi", "a": "p_g2_fathi", "b": "p_g2_nagwa_sp",
+      "children": ["p_g3_ahmed_fathi","p_g3_helmy_fathi","p_g3_mohamed_fathi"] },
+    { "id": "c_g2_afaf", "a": "p_g2_afaf", "b": "p_g2_hassanein_sp",
+      "children": ["p_g3_amany_afaf","p_g3_mahmoud_afaf","p_g3_mohamed_afaf","p_g3_islam_afaf"] },
+
+    { "id": "c_g3_ayman", "a": "p_g3_ayman", "b": "p_g3_omnia_sp", "children": [] },
+    { "id": "c_g3_ahmed_a", "a": "p_g3_ahmed_a", "b": "p_g3_mai_sp", "children": [] },
+    { "id": "c_g3_eman", "a": "p_g3_eman", "b": "p_g3_eman_husband_sp", "children": ["p_g4_maher"] },
+
+    { "id": "c_g3_mohamed_azza", "a": "p_g3_mohamed_azza", "b": "p_g3_manar_sp", "children": ["p_g4_mazen","p_g4_layan"] },
+
+    { "id": "c_g3_hassan", "a": "p_g3_hassan", "b": "p_g3_heba_sp", "children": ["p_g4_malik_hassan","p_g4_nelly"] },
+    { "id": "c_g3_amira", "a": "p_g3_amira", "b": "p_g3_amira_husband_sp", "children": ["p_g4_ammar","p_g4_adnan","p_g4_kareem"] },
+
+    { "id": "c_g3_mostafa_awatef", "a": "p_g3_mostafa_awatef", "b": "p_g3_marwa_sp", "children": ["p_g4_kinda","p_g4_karma","p_g4_adam"] },
+    { "id": "c_g3_doaa_awatef", "a": "p_g3_doaa_awatef", "b": "p_g3_ibrahim_husband_sp", "children": ["p_g4_ali_doaa","p_g4_abdelrahman","p_g4_youssef"] },
+    { "id": "c_g3_walaa_awatef", "a": "p_g3_walaa_awatef", "b": "p_g3_mohamed_walaa_sp", "children": ["p_g4_ahmed_walaa","p_g4_fayrouz"] },
+    { "id": "c_g3_wessam_awatef", "a": "p_g3_wessam_awatef", "b": "p_g3_amr_wessam_sp", "children": ["p_g4_ziad","p_g4_maya","p_g4_mostafa_wessam"] },
+
+    { "id": "c_g3_mohamed_fawzi", "a": "p_g3_mohamed_fawzi", "b": "p_g3_yosra_sp", "children": ["p_g4_taleen"] },
+    { "id": "c_g3_amr_fawzi", "a": "p_g3_amr_fawzi", "b": "p_g3_rana_sp", "children": ["p_g4_moaz","p_g4_malik_amr"] },
+    { "id": "c_g3_hala_fawzi", "a": "p_g3_hala_fawzi", "b": "p_g3_sameh_sp", "children": ["p_g4_gana","p_g4_salma_hala"] },
+
+    { "id": "c_g3_ahmed_fathi", "a": "p_g3_ahmed_fathi", "b": "p_g3_doaa_fathi_sp", "children": ["p_g4_mohamed_ahmed_fathi"] },
+    { "id": "c_g3_helmy_fathi", "a": "p_g3_helmy_fathi", "b": "p_g3_sara_sp", "children": ["p_g4_roqaya","p_g4_mariam"] },
+    { "id": "c_g3_mohamed_fathi", "a": "p_g3_mohamed_fathi", "b": "p_g3_farah_sp", "children": ["p_g4_ali_fathi"] },
+
+    { "id": "c_g3_amany_afaf", "a": "p_g3_amany_afaf", "b": "p_g3_mohamed_amany_sp", "children": ["p_g4_lara","p_g4_mostafa_amany","p_g4_radwa","p_g4_nada"] },
+    { "id": "c_g3_mahmoud_afaf", "a": "p_g3_mahmoud_afaf", "b": "p_g3_amany_mahmoud_sp", "children": ["p_g4_mohamed_mahmoud","p_g4_islam_mahmoud"] },
+    { "id": "c_g3_mohamed_afaf", "a": "p_g3_mohamed_afaf", "b": "p_g3_shaimaa_sp", "children": ["p_g4_ali_mohamed","p_g4_salma_mohamed"] },
+    { "id": "c_g3_islam_afaf", "a": "p_g3_islam_afaf", "b": "p_g3_yasmin_sp", "children": ["p_g4_seyal","p_g4_sama"] },
+
+    { "id": "c_g4_gana", "a": "p_g4_gana", "b": null, "children": ["p_g5_jamal"] },
+    { "id": "c_g4_salma_hala", "a": "p_g4_salma_hala", "b": null, "children": ["p_g5_asmaa"] },
+
+    { "id": "c_g4_mohamed_ahmed_fathi", "a": "p_g4_mohamed_ahmed_fathi", "b": "p_g4_farida_sp", "children": ["p_g5_salma_mohamed_fathi"] },
+
+    { "id": "c_g4_ali_mohamed", "a": "p_g4_ali_mohamed", "b": null, "children": ["p_g5_omar_ali"] },
+    { "id": "c_g4_salma_mohamed", "a": "p_g4_salma_mohamed", "b": null, "children": ["p_g5_noureldin"] },
+    { "id": "c_g4_mohamed_mahmoud", "a": "p_g4_mohamed_mahmoud", "b": null, "children": ["p_g5_eyad"] },
+    { "id": "c_g4_islam_mahmoud", "a": "p_g4_islam_mahmoud", "b": null, "children": ["p_g5_omar_islam"] },
+    { "id": "c_g4_radwa", "a": "p_g4_radwa", "b": "p_g4_radwa_sp", "children": ["p_g5_younes"] },
+    { "id": "c_g4_nada", "a": "p_g4_nada", "b": "p_g4_nada_sp", "children": ["p_g5_yassin"] }
+  ]
+}
